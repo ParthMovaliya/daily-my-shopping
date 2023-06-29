@@ -1,5 +1,6 @@
 "use client";
 
+import MainBody from '@/components/MainBody';
 import Nav from '@/components/Nav';
 import VerticalNavbar from '@/components/VerticalNavbar';
 import Cookies from 'js-cookie';
@@ -34,6 +35,7 @@ export default function Home() {
               <Nav />
               <div className="flex">
                 <VerticalNavbar />
+                <MainBody />
               </div>
             </div>
           </>

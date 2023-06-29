@@ -1,9 +1,9 @@
 import React from 'react'
-import { BiHomeAlt } from "react-icons/bi"
-import { BsListNested } from "react-icons/bs"
+import { BiHomeAlt, BiMenuAltRight } from "react-icons/bi"
 import { AiOutlineUnorderedList } from "react-icons/ai"
 import { CiSettings } from "react-icons/ci"
 import Image from 'next/image'
+
 const Nav = () => {
     return (
         <div className='bg-neutral-900 px-[30px] my-auto'>
@@ -18,7 +18,7 @@ const Nav = () => {
                         <p>Contents</p>
                     </div>
                     <div className="flex gap-1 items-center cursor-pointer">
-                        <BsListNested />
+                        <BiMenuAltRight />
                         <p>Categories</p>
                     </div>
                     <div className="flex gap-1 items-center cursor-pointer">
