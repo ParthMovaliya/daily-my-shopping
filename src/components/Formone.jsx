@@ -3,7 +3,7 @@ import React from 'react'
 
 const Formone = () => {
     return (
-        <div className='bg-white mt-4 mx-4 p-4 rounded-lg flex flex-col gap-2'>
+        <div className='bg-white mt-4 mx-4 p-8 rounded-lg flex flex-col gap-2'>
             <div className="">
                 <p className='font-semibold text-[22px]'>Form title</p>
                 <p>Sed tortor, sed velit ridiculus ipsum pharetra lacus odio gravida augue enim.</p>
@@ -18,6 +18,41 @@ const Formone = () => {
                     <p>Turkish</p>
                 </div>
             </div>
+            <div className="flex flex-col">
+                <label htmlFor="first">Label title</label>
+                <input className='border border-neutral-300 p-2 rounded-md' type="text" name="first" id="first" placeholder='Placeholder content' />
+            </div>
+            <div className="grid grid-cols-3 gap-4">
+                <div className="flex flex-col">
+                    <label htmlFor="select">Label title</label>
+                    <select className='border border-neutral-300 p-2 rounded-md' name="select" id="first" >
+                        <option value="" selected>Choose</option>
+                        <option value="One">One</option>
+                        <option value="Two">Two</option>
+                        <option value="Three">Three</option>
+                    </select>
+                </div>
+                <div className="flex flex-col">
+                    <label htmlFor="first">Label title</label>
+                    <input className='border border-neutral-300 p-2 rounded-md' type="text" name="first" id="first" placeholder='Placeholder content' />
+                </div>
+                <div className="flex flex-col">
+                    <label htmlFor="first">Label title</label>
+                    <input className='border border-neutral-300 p-2 rounded-md' type="text" name="first" id="first" placeholder='Placeholder content' />
+                </div>
+            </div>
+            <div className="grid grid-cols-2 gap-4">
+                <div className="flex flex-col">
+                    <label htmlFor="first">Label title</label>
+                    <input className='border border-neutral-300 p-2 rounded-md' type="text" name="first" id="first" placeholder='Placeholder content' />
+                </div>
+                <div className="flex flex-col ">
+                    <label htmlFor="first">Label title</label>
+                    <input className='border border-neutral-300 p-2 rounded-md' type="text" name="first" id="first" placeholder='Placeholder content' />
+                </div>
+            </div>
+            <label htmlFor="textarea">Label title</label>
+            <textarea className='border border-neutral-300 p-4 rounded-md' placeholder="Placeholder content" name="textarea" id="textarea" cols="0" rows="5"></textarea>
         </div>
     )
 }
