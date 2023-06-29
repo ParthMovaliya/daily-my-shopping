@@ -34,7 +34,9 @@ export default function Home() {
             <div className="">
               <Nav />
               <div className="flex">
-                <VerticalNavbar />
+                <div className="bg-neutral-800">
+                  <VerticalNavbar />
+                </div>
                 <MainBody />
               </div>
             </div>

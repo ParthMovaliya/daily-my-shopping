@@ -19,15 +19,15 @@ const Table = () => {
         { c1: "Risus consequat sollicitudin", c2: "Adipiscing odio nulla", c3: "Pharetra id sit" }
     ]
     return (
-        <div className='flex flex-col gap-2'>
-            <div className="rounded-md overflow-hidden">
-                <table className='w-full border border-neutral-300'>
+        <div className="flex flex-col gap-6">
+            <div className="rounded-md overflow-x-auto">
+                <table className="border border-neutral-300 min-w-full">
                     <thead>
                         <tr className='bg-neutral-300 text-left '>
                             <th className="text-lg font-medium px-4 py-2 border border-r-neutral-100">Column-1</th>
                             <th className="text-lg font-medium px-4 py-2 border border-r-neutral-100">Column-2</th>
                             <th className="text-lg font-medium px-4 py-2 border border-r-neutral-100">Column-3</th>
-                            <th className="text-lg font-medium px-4 py-2 border border-r-neutral-100">Column-4</th>
+                            <th className="text-lg font-medium px-4 py-2 ">Column-4</th>
                         </tr>
                     </thead>
                     <tbody>

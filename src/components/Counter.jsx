@@ -4,7 +4,7 @@ import { FiList, FiUsers } from 'react-icons/fi'
 import { MdOutlineShoppingBag } from "react-icons/md"
 const Counter = () => {
     return (
-        <div className='grid grid-cols-4 gap-4 p-4 '>
+        <div className='grid  gap-6 p-4 mx-2 grid-cols-2 lg:grid-cols-4'>
             <div className="flex bg-white p-5 gap-4 rounded-lg">
                 <MdOutlineShoppingBag className='text-orange-600 w-8 h-9 ' />
                 <div className="">

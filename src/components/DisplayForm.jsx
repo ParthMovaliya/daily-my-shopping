@@ -3,7 +3,7 @@ import { AiOutlineInfoCircle } from "react-icons/ai"
 import Table from './Table'
 const DisplayForm = () => {
     return (
-        <div className='bg-white mx-4 p-4 rounded-lg flex flex-col gap-2'>
+        <div className='bg-white mx-6 p-6 rounded-lg flex flex-col gap-4'>
             <div className="">
                 <p className='font-semibold text-[22px]'>Form title</p>
                 <p>Sed tortor, sed velit ridiculus ipsum pharetra lacus odio gravida augue enim.</p>
@@ -12,7 +12,6 @@ const DisplayForm = () => {
                 <AiOutlineInfoCircle className='text-red-900' />
                 <p className='text-red-900'>Senectus malesuada suspendisse bibendum elit amet vitae.</p>
             </div>
-
             <Table />
         </div>
     )
