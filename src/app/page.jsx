@@ -1,6 +1,7 @@
 "use client";
 
 import Nav from '@/components/Nav';
+import VerticalNavbar from '@/components/VerticalNavbar';
 import Cookies from 'js-cookie';
 import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
@@ -31,6 +32,9 @@ export default function Home() {
           <>
             <div className="">
               <Nav />
+              <div className="flex">
+                <VerticalNavbar />
+              </div>
             </div>
           </>
           :
