@@ -55,7 +55,7 @@ const Nav = () => {
                         }
                         {
                             menu &&
-                            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className=''>
+                            <div i className=''>
                                 <div className="z-10 absolute left-7 top-12 bg-neutral-300/10 border border-neutral-300 backdrop-blur-md text-neutral-600 p-4 rounded-lg  gap-4 flex flex-col">
                                     <div className="flex gap-1 items-center cursor-pointer">
                                         <BiHomeAlt />
@@ -74,7 +74,7 @@ const Nav = () => {
                                         <p>Settings</p>
                                     </div>
                                 </div>
-                            </motion.div>
+                            </div>
                         }
                     </div>
                 </div>
