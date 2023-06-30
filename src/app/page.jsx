@@ -43,9 +43,9 @@ export default function Home() {
           </>
           :
           <>
-            <div className="bg-[#F5F5F5] h-screen flex justify-center items-center">
-              <div className="w-7/12 flex">
-                <div className="hidden lg:flex">
+            <div className="bg-[#F5F5F5] h-screen flex items-center justify-center">
+              <div className="w-full md:w-9/12 lg:w-7/12 flex justify-center">
+                <div className="hidden md:flex">
                   <Image className='h-full rounded-s-md object-cover' src="/images/login.png" alt='Login' height={1000} width={1000} />
                 </div>
                 <div className="p-4 rounded-r-md bg-white w-[80vw] flex flex-col gap-6">
