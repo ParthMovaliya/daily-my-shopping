@@ -59,7 +59,7 @@ export default function Home() {
                     <form action="post" className='flex flex-col gap-3' onSubmit={(e) => loginUser(e)}>
                       <div className="flex flex-col gap-1">
                         <label htmlFor="email" className='text-sm font-light'>E-Mail</label>
-                        <input required ref={mail} className='border rounded-md border-neutral-300 p-2' type="text" name='email' placeholder='Enter Your Email' />
+                        <input required ref={mail} className='border rounded-md border-neutral-300 p-2' type="email" name='email' placeholder='Enter Your Email' />
                       </div>
                       <div className="flex flex-col gap-1">
                         <label htmlFor="password" className='text-sm font-light'>Password</label>
