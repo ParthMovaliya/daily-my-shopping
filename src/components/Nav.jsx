@@ -15,7 +15,7 @@ const Nav = () => {
 
     useEffect(() => {
         // setLogin(true);
-        const timer = setTimeout(() => { setLogin(false) }, 5000);
+        const timer = setTimeout(() => { setLogin(false) }, 3000);
         return () => clearTimeout();
     }, []);
 
