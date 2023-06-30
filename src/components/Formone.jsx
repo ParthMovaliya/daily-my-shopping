@@ -27,7 +27,7 @@ const Formone = () => {
                     <div className="flex flex-col gap-1">
                         <label htmlFor="select">Label title</label>
                         <select className='border border-neutral-300 p-2 rounded-md' name="select" >
-                            <option value="" selected>Choose</option>
+                            <option value="">Choose</option>
                             <option value="One">One</option>
                             <option value="Two">Two</option>
                             <option value="Three">Three</option>

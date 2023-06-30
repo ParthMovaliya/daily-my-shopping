@@ -1,17 +1,27 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { BiHomeAlt, BiMenuAltRight } from "react-icons/bi"
 import { AiOutlineUnorderedList } from "react-icons/ai"
 import { CgMenu } from "react-icons/cg"
 import { IoMdClose } from "react-icons/io"
 import { CiSettings } from "react-icons/ci"
-import Image from 'next/image'
-import { motion } from "framer-motion"
+import Image from 'next/image';
+import Popup from './Popup'
+import { motion } from "framer-motion";
 
 const Nav = () => {
     const [menu, setMenu] = useState(false);
     const [profile, setProfile] = useState(false);
+    const [login, setLogin] = useState(true);
+
+    useEffect(() => {
+        // setLogin(true);
+        const timer = setTimeout(() => { setLogin(false) }, 5000);
+        return () => clearTimeout();
+    }, []);
+
     return (
         <div className='bg-neutral-900 px-[30px] '>
+            <Popup isVisible={login} />
             <div className="text-white flex justify-between items-center flex-row h-[55px]">
                 <div className=" gap-6 hidden md:flex">
                     <div className="flex gap-1 items-center cursor-pointer">
@@ -32,7 +42,7 @@ const Nav = () => {
                     </div>
                 </div>
                 <div className="flex md:hidden">
-                    <div className="flex gap-1 items-center cursor-pointer duration-150" onClick={() => { setMenu(menu => !menu) }}>
+                    <div className="flex gap-1 items-center cursor-pointer " onClick={() => { setMenu(menu => !menu) }}>
                         {
                             !menu ? <div className='text-white flex items-center gap-1'>
                                 <CgMenu />
@@ -46,7 +56,7 @@ const Nav = () => {
                         {
                             menu &&
                             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className=''>
-                                <div className="absolute left-8 top-12 bg-green-950/70 border-2 border-white backdrop-blur-md text-white py-2 px-4 rounded-lg  gap-4 p-8 flex flex-col">
+                                <div className="z-10 absolute left-7 top-12 bg-neutral-300/10 border border-neutral-300 backdrop-blur-md text-neutral-600 p-4 rounded-lg  gap-4 flex flex-col">
                                     <div className="flex gap-1 items-center cursor-pointer">
                                         <BiHomeAlt />
                                         <p>Home</p>

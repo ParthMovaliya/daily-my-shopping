@@ -16,11 +16,11 @@ export default function Home() {
   }, []);
   const mail = useRef(null);
   const pass = useRef(null);
-
+  var oneMin = new Date(new Date().getTime() + 1 * 60 * 1000)
   const loginUser = (e) => {
     e.preventDefault();
-    Cookies.set('userMail', mail.current?.value, { expires: 1 });
-    Cookies.set('userPass', pass.current?.value, { expires: 1 });
+    Cookies.set('userMail', mail.current?.value, { expires: oneMin });
+    Cookies.set('userPass', pass.current?.value, { expires: oneMin });
     setuserMail(mail.current?.value);
     setUserPass(pass.current?.value);
   }
