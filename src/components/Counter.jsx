@@ -50,7 +50,7 @@ const Counter = () => {
                 <FiUsers className='text-emerald-600 w-8 h-9 ' />
                 <div className="">
                     <p className="font-light text-[12px]">Total Visitors </p>
-                    <div className='font-semibold size-[22px] flex'>$
+                    <div className='font-semibold size-[22px] flex'>
                         <motion.div className="">{visitors}</motion.div>
                     </div>
                 </div>
@@ -59,7 +59,7 @@ const Counter = () => {
                 <FiList className='text-purple-600 w-8 h-9 ' />
                 <div className="">
                     <p className="font-light text-[12px]">Total Orders</p>
-                    <div className='font-semibold size-[22px] flex'>$
+                    <div className='font-semibold size-[22px] flex'>
                         <motion.div className="">{orders}</motion.div>
                     </div>
                 </div>
